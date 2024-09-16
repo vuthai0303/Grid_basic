@@ -38,6 +38,8 @@
 .content {
   grid-area: content;
   text-align: center;
+  margin-left: 50px;
+  margin-top: 30px;
 }
 .footer {
   background-color: grey;
@@ -50,28 +52,17 @@ body {
 /* css content */
 .grid-layout-content {
   display: grid;
-  height: 100%;
-  grid-template-columns: 100px 100px 150px;
-  /* grid-template-columns: repeat(2, 100px) 150px; */
+  height: 400px;
+  width: 400px;
+  grid-template-columns: 2fr 2fr 1fr;
+  /* grid-template-columns: repeat(2, 2fr) 1fr; */
   grid-gap: 10px;
   background-color: #2196f3;
   padding: 10px;
 }
-.grid-item-1 {
-  background-color: red;
-}
-.grid-item-2 {
-  background-color: plum;
-}
-.grid-item-3 {
-  background-color: yellow;
-}
-.grid-item-4 {
-  background-color: green;
-}
 
 .grid-layout-content > div {
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
   font-size: 30px;
 }
